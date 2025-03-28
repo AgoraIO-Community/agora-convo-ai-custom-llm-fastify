@@ -146,6 +146,19 @@ This project can be deployed to various platforms:
 
 See the corresponding configuration files in the repository for platform-specific setup.
 
+## Quick Deploy
+
+| Heroku                                                                                        | Netlify                                                                                                                                                                                       | Render                                                                                                                                                                              | Vercel                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) | [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AgoraIO-Community/agora-convo-ai-custom-llm-fastify) | [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/AgoraIO-Community/agora-convo-ai-custom-llm-fastify) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AgoraIO-Community/agora-convo-ai-custom-llm-fastify) |
+
+Each platform requires the appropriate configuration:
+
+- Heroku: Uses the [`app.json`](./heroku/app.json) file and [`Procfile`](./heroku/Procfile)
+- Netlify: Uses the [`netlify.toml`](./netlify.toml) file and the Netlify function in [`netlify/functions/api.js`](./netlify/functions/api.js)
+- Render: Uses the [`render.yaml`](./render.yaml) file
+- Vercel: Uses the [`vercel.json`](./vercel.json) file
+
 ## License
 
 MIT License
